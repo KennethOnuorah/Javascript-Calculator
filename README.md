@@ -14,4 +14,5 @@ A basic calculator made for simple matematical operations.
 * Automatic comma formatting
 * Error handling
 
+## Demonstration
 <img src="https://github.com/KennethOnuorah/Javascript-Calculator/blob/main/src/images/tutorial.gif" width="286" height="349"/>
