@@ -1,5 +1,5 @@
 # ➕➖ JS Calculator ✖️➗
-A basic calculator made for simple matematical operations.
+A basic calculator made for performing simple matematical operations.
 
 ## Made with
 * HTML
