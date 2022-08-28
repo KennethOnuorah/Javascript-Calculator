@@ -1,7 +1,7 @@
 # ➕➖ JS Calculator ✖️➗
 A basic calculator made for performing simple matematical operations.
 
-## Made with
+## Languages used
 * HTML
 * CSS
 * Javascript
