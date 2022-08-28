@@ -79,7 +79,7 @@ function update()
     console.log("")
 }
 
-//Handles entering numbers, exponents and toggle exponent mode
+//Handles entering numbers and exponents
 function typingManager(char)
 {
     if((mainNumberAsTextLength < mainNumberAsTextLengthMax || operandSelectMode) && !exponentMode)
@@ -122,7 +122,7 @@ function operandSelectionManager(op)
     update()
 }
 
-//Handles adding decimals to numbers
+//Handles inserting decimals onto numbers
 function decimalManager()
 {
     !exponentMode && !inError? 
@@ -132,7 +132,7 @@ function decimalManager()
     update()
 }
 
-//Handles toggling positive/negative for main number and exponents
+//Handles toggling negative sign for main number and exponents
 function negativeToggleManager()
 {
     !exponentMode ?
@@ -188,6 +188,7 @@ function exponentManager()
     update()
 }
 
+//Either prints the final answer, or power raises a number based on whether or not exponent mode is enabled
 function returnAnswer()
 {
     if(exponentMode)
