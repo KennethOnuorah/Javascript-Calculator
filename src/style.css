@@ -1,0 +1,180 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('fonts/DS-DIGIT.TTF');
+   }
+
+html{
+    background-color: #333333;
+}
+
+div.calc_body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c2c2c2;
+    border: 10px solid #797979;
+    border-radius: 2vh;
+    width: 550px;
+    height: 675px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px 16px rgba(0,0,0,0.12);
+}
+
+div.calc_screen {
+    position: absolute;
+    align-content: flex-end;
+    top: 20px; bottom: 70%; left: 20px; right: 20px;
+    background-color: rgb(71, 71, 71);
+    border: 10px solid #2c2c2c;
+    border-radius: 2vh;
+    box-shadow: inset -6px 0px 5px rgba(0,0,0,0.12),
+                inset 6px 0px 5px rgba(0,0,0,0.12), 
+                inset 0px -6px 5px rgba(0,0,0,0.12),
+                inset 0px 6px 5px rgba(0,0,0,0.12);
+}
+
+section.other_tools {
+    position: absolute;
+    transform: translate(0%, 15px);
+    padding: 10px;
+    top: 215px; bottom: 345px; left: 20px; right: 170px;
+    background-color: rgb(71, 71, 71);
+    border: 10px solid #2c2c2c;
+    border-radius: 2vh;
+    user-select: none;
+    box-shadow: inset -6px 0px 5px rgba(0,0,0,0.12),
+                inset 6px 0px 5px rgba(0,0,0,0.12), 
+                inset 0px -6px 5px rgba(0,0,0,0.12),
+                inset 0px 6px 5px rgba(0,0,0,0.12);
+}
+
+section.number_pad {
+    position: absolute;
+    transform: translate(0%, -15px);
+    text-align: center;
+    padding: 10px;
+    top: 380px; bottom: 20px; left: 20px; right: 170px;
+    background-color: rgb(71, 71, 71);
+    border: 10px solid #2c2c2c;
+    border-radius: 2vh;
+    user-select: none;
+    box-shadow: inset -6px 0px 5px rgba(0,0,0,0.12),
+                inset 6px 0px 5px rgba(0,0,0,0.12), 
+                inset 0px -6px 5px rgba(0,0,0,0.12),
+                inset 0px 6px 5px rgba(0,0,0,0.12);
+}
+
+div.calc_button {
+    overflow: auto;
+    font-family: monospace;
+    text-align: center;
+    display: inline-block;
+    padding: 3px;
+    background-color: white;
+    border: 10px solid #797979;
+    border-radius: 2vh;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+div[id$="_tool"]{
+    background-color: #7c906a;
+    border: 10px solid #353e2d;
+}
+div[id$="_tool"]:hover{
+    background-color: #a7b399;
+}
+
+div[id$="del"]{
+    background-color: #a14747;
+    border: 10px solid #401b1b;
+}
+div[id$="del"]:hover{
+    background-color: #be5454;
+}
+
+div[id$="_pad"]{
+    background-color: #929292;
+    border: 10px solid #2e2e2e;
+}
+div[id$="pad"]:hover{
+    background-color: #adadad;
+}
+
+div[id$="_oper"]{
+    background-color: #baa966;
+    border: 10px solid #34301d;
+}
+div[id$="_oper"]:hover{
+    background-color: #ccba71;
+}
+
+aside.operators {
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    top: 215px; bottom: 20px; left: 395px; right: 20px;
+    background-color: rgb(71, 71, 71);
+    border: 10px solid #2c2c2c;
+    border-radius: 2vh;
+    user-select: none;
+    box-shadow: inset -6px 0px 5px rgba(0,0,0,0.12),
+                inset 6px 0px 5px rgba(0,0,0,0.12), 
+                inset 0px -6px 5px rgba(0,0,0,0.12),
+                inset 0px 6px 5px rgba(0,0,0,0.12);
+}
+
+p.btn_txt {
+    font-size: 15px;
+    font-weight: bolder;
+    pointer-events: none;
+    user-select: none;
+}
+
+div.num_txt {
+    color:rgb(141, 219, 63);
+    text-align: right; 
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: "digital-clock-font";
+    font-size: 57px;
+    font-weight: bolder;
+}
+
+div.pow_txt {
+    color:rgb(141, 219, 63);
+    margin-top: 20px;
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: "digital-clock-font";
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#num_txt {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#pow_txt {
+    opacity: 0%;
+    user-select: none;
+}
+#pow_num {
+    opacity: 0%;
+    user-select: none;
+}
+
+/*Animations*/
+@keyframes pulsing_anim {
+    0%{opacity: 100%;}
+    50%{opacity: 30%;}
+    100%{opacity: 100%;}
+}
+@keyframes answer_pulse_anim {
+    
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" href="images/icon.png">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="calc_body">
+            <div class="calc_screen">
+                <div class="pow_txt">
+                    <span id="pow_txt">Pow = </span><span id="pow_num">0</span>
+                </div>
+                <div class="num_txt">
+                    <p id="num_txt">0</p>
+                </div>
+            </div>
+            <section class="other_tools">
+                <div class="calc_button" id="pow_tool" onclick="exponentManager()"><p class="btn_txt">Xʸ</p></div>
+                <div class="calc_button" id="sqrt_tool" onclick="squareRootManager()"><p class="btn_txt">√</p></div>
+                <div class="calc_button" id="back_del" onclick="backspaceManager()"><p class="btn_txt">&lt&lt</p></div>
+                <div class="calc_button" id="trash_del" onclick="reset()"><p class="btn_txt">X</p></div>
+            </section>
+            <section class="number_pad">
+                <div class="calc_button" id="1_pad" onclick="typingManager('1')"><p class="btn_txt">1</p></div>
+                <div class="calc_button" id="2_pad" onclick="typingManager('2')"><p class="btn_txt">2</p></div>
+                <div class="calc_button" id="3_pad" onclick="typingManager('3')"><p class="btn_txt">3</p></div>
+                <div class="calc_button" id="4_pad" onclick="typingManager('4')"><p class="btn_txt">4</p></div>
+                <div class="calc_button" id="5_pad" onclick="typingManager('5')"><p class="btn_txt">5</p></div>
+                <div class="calc_button" id="6_pad" onclick="typingManager('6')"><p class="btn_txt">6</p></div>
+                <div class="calc_button" id="7_pad" onclick="typingManager('7')"><p class="btn_txt">7</p></div>
+                <div class="calc_button" id="8_pad" onclick="typingManager('8')"><p class="btn_txt">8</p></div>
+                <div class="calc_button" id="9_pad" onclick="typingManager('9')"><p class="btn_txt">9</p></div>
+                <div class="calc_button" id="0_pad" onclick="typingManager('0')"><p class="btn_txt">0</p></div>
+                <div class="calc_button" id="tog_neg_pad" onclick="negativeToggleManager()"><p class="btn_txt">-/+</p></div>
+                <div class="calc_button" id="dec_pad" onclick="decimalManager()"><p class="btn_txt">.</p></div>
+            </section>
+            <aside class="operators">
+                <div class="calc_button" id="add_oper" onclick="operandSelectionManager('+')"><p class="btn_txt">+</p></div>
+                <div class="calc_button" id="sub_oper" onclick="operandSelectionManager('-')"><p class="btn_txt">-</p></div>
+                <div class="calc_button" id="mul_oper" onclick="operandSelectionManager('*')"><p class="btn_txt">×</p></div>
+                <div class="calc_button" id="div_oper" onclick="operandSelectionManager('/')"><p class="btn_txt">÷</p></div>
+                <div class="calc_button" id="equal_oper" onclick="returnAnswer()"><p class="btn_txt">=</p></div>
+            </aside>
+        </div>
+    </body>
+</html>
