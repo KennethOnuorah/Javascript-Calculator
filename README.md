@@ -9,7 +9,7 @@ A basic calculator made for performing simple matematical operations.
 ## Features
 * Four basic operators
 * Decimals
-* Negative toggling
+* Negative sign toggling
 * Square rooting
 * Custom exponential expressions
 * Automatic comma formatting
