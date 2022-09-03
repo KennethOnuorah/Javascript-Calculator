@@ -8,6 +8,7 @@ A basic calculator for performing simple mathematical operations.
 
 ## Features
 * Four basic operators
+* Operation chaining
 * Decimals
 * Negative sign toggling
 * Square rooting
