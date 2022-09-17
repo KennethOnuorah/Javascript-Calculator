@@ -34,5 +34,5 @@ Languages used:
 ## Preview 👁️
 ------
 <p align="center">
-  <img src="https://github.com/KennethOnuorah/Javascript-Calculator/blob/main/src/images/tutorial.gif" width="300">
+  <img src="https://github.com/KennethOnuorah/Javascript-Calculator/blob/main/tutorial.gif" width="300">
 </p>
